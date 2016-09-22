@@ -6,6 +6,12 @@ There's nothing wrong with the phusion image (it's really good!). This contains 
 I personally find useful.
 
 
-#Installation (Linux):
+##Installation (Linux):
 
-TMP="$(mktemp -d)"  &&  git clone https://github.com/haukehein/phusion_passenger-customizable.git "$TMP" --recursive  &&  cd "$TMP"  &&  bash ./build.sh  &&  cd -  &&  rm -rf "$TMP"
+```
+TMP="$(mktemp -d)"  && \
+git clone https://github.com/haukehein/phusion_passenger-customizable.git "$TMP" --recursive  && \
+cd "$TMP"  && \
+bash ./build.sh  && \
+cd -  &&  rm -rf "$TMP"
+```

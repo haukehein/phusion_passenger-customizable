@@ -7,7 +7,8 @@ FROM phusion/passenger-customizable:0.9.19
 MAINTAINER haukehein <BitCrusher@gmx-topmail.de>
 
 ENV HOME /root
-RUN cd && \
+RUN mv -f /bin/sh /bin/sh.orig && ln -sr /bin/bash /bin/sh && \
+cd && \
 apt-get update && \
 apt-get upgrade -y -o Dpkg::Options::="--force-confold" && \
 apt-get upgrade  -y && \

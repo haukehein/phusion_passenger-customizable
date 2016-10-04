@@ -11,6 +11,7 @@ RUN cd && \
 apt-get update && \
 apt-get upgrade -y -o Dpkg::Options::="--force-confold" && \
 apt-get upgrade  -y && \
+apt-get install bash -y && \
 apt-get -y autoremove && \
 apt-get clean && \
 rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/*

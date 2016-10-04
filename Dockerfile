@@ -13,5 +13,4 @@ apt-get upgrade -y -o Dpkg::Options::="--force-confold" && \
 apt-get upgrade  -y && \
 apt-get -y autoremove && \
 apt-get clean && \
-rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/* && \
-rm -f /bin/sh && ln -sr /bin/bash /bin/sh
+rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/*
